@@ -1,57 +1,53 @@
 package org.dnyanyog.dto.response;
 
 import java.time.LocalDateTime;
-
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-
 
 @Component
 public class NotificationResponse {
 
-	private String status;
-	private String code;
-	private String message;
-	private LocalDateTime timestamp;
-	
-	public static NotificationResponse getInstance() {
-		return new NotificationResponse();
-	}
+  private String status;
+  private String code;
+  private String message;
+  private LocalDateTime timestamp;
 
-	public String getStatus() {
-		return status;
-	}
+  public static NotificationResponse getInstance() {
+    return new NotificationResponse();
+  }
 
-	public NotificationResponse setStatus(String status) {
-		this.status = status;
-		return this;
-	}
+  public String getStatus() {
+    return status;
+  }
 
-	public String getCode() {
-		return code;
-	}
+  public NotificationResponse setStatus(String status) {
+    this.status = status;
+    return this;
+  }
 
-	public NotificationResponse setCode(String string) {
-		this.code = string;
-		return this;
-	}
+  public String getCode() {
+    return code;
+  }
 
-	public String getMessage() {
-		return message;
-	}
+  public NotificationResponse setCode(String string) {
+    this.code = string;
+    return this;
+  }
 
-	public NotificationResponse setMessage(String message) {
-		this.message = message;
-		return this;
-	}
+  public String getMessage() {
+    return message;
+  }
 
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
+  public NotificationResponse setMessage(String message) {
+    this.message = message;
+    return this;
+  }
 
-	public NotificationResponse setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
-		return this;
-	}
+  public LocalDateTime getTimestamp() {
+    return timestamp;
+  }
 
+  public NotificationResponse setTimestamp(LocalDateTime timestamp) {
+    this.timestamp = timestamp;
+    return this;
+  }
 }
